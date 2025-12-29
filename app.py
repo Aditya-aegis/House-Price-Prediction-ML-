@@ -19,7 +19,7 @@ all_value = []
 for i in X:
   min_value = int(X[i].min())
   max_vlaue = int(X[i].max())
-  ans = st.siderbar.slider(f'selet {i} value', min_value, max_value)
+  ans = st.sidebar.slider(f'selet {i} value', min_value, max_value)
   all_vlaue.append(ans)  
 
 # st.write(all_value)
@@ -43,6 +43,7 @@ msg = f'''House price is: ${round(house_price*100000,2)}'''
 st.success(msg)
 
 st.markdown('''**Deign and Developed by: Aditya Kumar**''')
+
 
 
 
